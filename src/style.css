@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    margin: 0;
+}
+
+.container{
+    width: 500px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #596275;
+}
+
+form{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+button{
+    background: #079992;
+    font-weight: bold;
+    color: white;
+    padding: 5px 15px;
+    border: 0;
+    border-radius: 5px;
+    margin: 0 3px;
+    cursor: pointer;
+}
+
+input{
+    padding: 8px 15px;
+    outline: 0;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+form input{
+    flex: 1;
+    margin-right: 15px;
+}
+
+ul{
+    padding: 0;
+    list-style-type: none;
+}
+
+li:hover{
+    background: #fff;
+    padding: 20px 10px 20px 15px;
+}
+
+li{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px 10px;
+    margin: 10px 0;
+    background-color: #d1d8e0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+li p{
+    flex: 1;
+    padding: 10px 0;
+}
+
+li input{
+    flex: 1;
+    margin-right: 15px;
+}
+
+li .todo {
+    flex: 0 0 20px;
+    height: 20px;
+    border-radius: 30px;
+    margin-right: 15px;
+    border: 2px solid #079992;
+}
+
+li .todo.done {
+    background: #079992;
+}
+
+li p.done{
+    text-decoration: line-through;
+}
